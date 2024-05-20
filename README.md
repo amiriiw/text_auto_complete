@@ -7,7 +7,7 @@ in this project we will train models and use them to auto completing texts in pe
 <a href="https://github.com/maskiiw"><img alt="numpy" src="https://img.shields.io/badge/numpy-013243?style=for-the-badge&logo=numpy&logoColor=f5f5f5"></a>
 <a href="https://github.com/maskiiw"><img alt="pandas" src="https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=f5f5f5"></a>
 <a href="https://github.com/maskiiw"><img alt="joblib" src="https://img.shields.io/badge/joblib-D3FB52?style=for-the-badge"></a>
-<a href="https://github.com/maskiiw"><img alt="pickle" src="https://img.shields.io/badge/pickle-139C5A?style=for-the-badge"></a
+<a href="https://github.com/maskiiw"><img alt="pickle" src="https://img.shields.io/badge/pickle-139C5A?style=for-the-badge"></a>
 
 ## How you should use the src:
 1- 
