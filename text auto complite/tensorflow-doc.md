@@ -17,14 +17,15 @@ deploy them efficiently across various platforms.
 
 
 ## advantages of TensorFlow?
-The advantages of using TensorFlow include its high performance, distributed computing capabilities, and support for 
+
+- The advantages of using TensorFlow include its high performance, distributed computing capabilities, and support for 
 deep learning techniques like neural networks. TensorFlow also provides a rich ecosystem of libraries, tools, and 
 community support, making it a popular choice for machine learning projects.
 
 
 ## disadvantages of TensorFlow?
 
-One potential disadvantage of TensorFlow is its steep learning curve, especially for beginners in machine learning. 
+- One potential disadvantage of TensorFlow is its steep learning curve, especially for beginners in machine learning. 
 The complexity of TensorFlow's API and the need for understanding concepts like tensors and computational graphs can be 
 challenging for newcomers. Additionally, TensorFlow's extensive features may lead to increased resource consumption and 
 longer development times for simpler tasks.
