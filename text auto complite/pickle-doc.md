@@ -17,14 +17,16 @@ saving model objects in machine learning, caching data, or transferring data bet
 
 ## advantages of pickle?
 
-The advantages of using pickle include its simplicity and ease of use. It can handle complex data structures seamlessly,
+- The advantages of using pickle include its simplicity and ease of use. It can handle complex data structures seamlessly,
 making it convenient for storing and retrieving Python objects without having to manually convert them to a different format.
 
 
 ## disadvantages of pickle?
-One disadvantage of pickle is that it is specific to Python, meaning the serialized data can only be read by Python 
+
+- One disadvantage of pickle is that it is specific to Python, meaning the serialized data can only be read by Python 
 programs. Additionally, pickle is not secure against erroneous or maliciously constructed data, so unpickling data from 
 untrusted sources can pose security risks.
+
 
 ## Summary about pickle:
 
