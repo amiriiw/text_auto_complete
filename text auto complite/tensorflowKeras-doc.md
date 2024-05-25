@@ -17,7 +17,7 @@ lower-level details of TensorFlow.
 
 ## advantages of TensorFlow Keras?
 
-The advantages of using TensorFlow Keras include its ease of use, modular design, and seamless integration with 
+- The advantages of using TensorFlow Keras include its ease of use, modular design, and seamless integration with 
 TensorFlow. Keras provides a simple and intuitive way to build neural networks, making it accessible to both beginners 
 and experienced deep learning practitioners. It also offers a wide range of pre-built layers, activations, and 
 optimizers for building custom models.
@@ -25,7 +25,7 @@ optimizers for building custom models.
 
 ## disadvantages of TensorFlow Keras?
 
-One potential disadvantage of TensorFlow Keras is its limited flexibility compared to directly using TensorFlow. While 
+- One potential disadvantage of TensorFlow Keras is its limited flexibility compared to directly using TensorFlow. While 
 Keras simplifies the process of building neural networks, it may not offer the same level of customization and control
 as working with TensorFlow at a lower level. Additionally, some advanced features or custom implementations may require 
 working directly with TensorFlow.
