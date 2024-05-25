@@ -17,14 +17,14 @@ needed.
 
 ## advantages of joblib?
 
-The advantages of using joblib include its ability to parallelize computations, which can significantly reduce the time 
+- The advantages of using joblib include its ability to parallelize computations, which can significantly reduce the time 
 taken to execute functions. Joblib also provides easy-to-use tools for caching function results, which can improve the 
 performance of repetitive computations.
 
 
 ## disadvantages of joblib?
 
-One potential disadvantage of joblib is that it may introduce complexity to the code, especially when dealing with 
+- One potential disadvantage of joblib is that it may introduce complexity to the code, especially when dealing with 
 parallel computing and caching. Additionally, joblib's caching mechanism may consume additional memory, so it's 
 important to monitor memory usage when using joblib.
 
