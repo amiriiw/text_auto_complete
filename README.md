@@ -1,5 +1,5 @@
 # text_auto_complete
-in this project we will train models and use them to auto completing texts in persian.
+in this basic project we will train models and use them to auto completing texts in persian.
 
 #### in this project we use below libraries: 
 <a href="https://github.com/maskiiw"><img alt="tensorflow" src="https://img.shields.io/badge/tensorflow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=f5f5f5"></a>
