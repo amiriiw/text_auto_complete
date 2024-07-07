@@ -10,10 +10,12 @@ in this basic project we will train models and use them to auto completing texts
 <a href="https://github.com/amiriiw"><img alt="pickle" src="https://img.shields.io/badge/pickle-139C5A?style=for-the-badge"></a>
 
 ## How you should use the src:
-1- at first you should train the dataset in text-trainer.py file 
+1- at first you should download the dataset from  https://drive.google.com/drive/folders/1qY25-g_HVWJDs7Lzq5mxdDg50-wbF0Up?usp=sharing
+
+2- then you should train the dataset in text-trainer.py file 
   - point: if you dont have strong system train the model in colab or jupyter.
 
-2- after first step run the auto-complete file to see how program work.
+3- after first step run the auto-complete file to see how program work.
 
 ### offer: 
 Read the md files to get good information about the libraries used.
