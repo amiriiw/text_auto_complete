@@ -61,9 +61,7 @@ This script uses the trained model to autocomplete text inputs and stores the re
 
 ### Dataset
 
-You can download the Persian text dataset used for training from the following link:
-
-[Download Dataset](https://drive.google.com/drive/folders/1Exnb5z7qXkU2l0x2cbQC_CeJvYT9Cn3d?usp=sharing)
+The dataset used for training the model can be accessed via this [Dataset](https://drive.google.com/drive/folders/1Exnb5z7qXkU2l0x2cbQC_CeJvYT9Cn3d?usp=sharing)
 
 ## Installation and Setup
 
@@ -72,7 +70,7 @@ To use this project, follow these steps:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/amiriiw/text-auto-complete.git
+    git clone https://github.com/amiriiw/text_auto_complete
     cd text-auto-complete
     ```
 
