@@ -59,6 +59,12 @@ This script uses the trained model to autocomplete text inputs and stores the re
     - The user inputs text, which is tokenized and passed through the model.
     - The model predicts the next words, and the results are saved in the SQLite database.
 
+### Dataset
+
+You can download the Persian text dataset used for training from the following link:
+
+[Download Dataset](https://drive.google.com/drive/folders/1Exnb5z7qXkU2l0x2cbQC_CeJvYT9Cn3d?usp=sharing)
+
 ## Installation and Setup
 
 To use this project, follow these steps:
