@@ -1,22 +1,95 @@
-# text_auto_complete
-in this basic project we will train models and use them to auto completing texts in persian.
+# Text Auto-Complete Project
 
-#### in this project we use below libraries: 
-<a href="https://github.com/amiriiw"><img alt="tensorflow" src="https://img.shields.io/badge/tensorflow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=f5f5f5"></a>
-<a href="https://github.com/amiriiw"><img alt="pandas" src="https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=f5f5f5"></a>
-<a href="https://github.com/amiriiw"><img alt="keras" src="https://img.shields.io/badge/keras-D00000?style=for-the-badge&logo=keras&logoColor=f5f5f5"></a>
-<a href="https://github.com/amiriiw"><img alt="numpy" src="https://img.shields.io/badge/numpy-013243?style=for-the-badge&logo=numpy&logoColor=f5f5f5"></a>
-<a href="https://github.com/amiriiw"><img alt="joblib" src="https://img.shields.io/badge/joblib-D3FB52?style=for-the-badge"></a>
-<a href="https://github.com/amiriiw"><img alt="pickle" src="https://img.shields.io/badge/pickle-139C5A?style=for-the-badge"></a>
-<a href="https://github.com/amiriiw"><img alt="PyQt5" src="https://img.shields.io/badge/PyQt5-7C4EC4?style=for-the-badge"></a>
+Welcome to the **Text Auto-Complete Project**! This project is designed to train a model for completing text inputs using a Persian dataset, and then use that model to suggest text completions in real-time and store the results in an SQLite database.
 
-## How you should use the src:
-1- at first you should download the dataset from  https://drive.google.com/drive/folders/1qY25-g_HVWJDs7Lzq5mxdDg50-wbF0Up?usp=sharing
+## Overview
 
-2- then you should train the dataset in text-trainer.py file 
-  - point: if you dont have strong system train the model in colab or jupyter.
+This project consists of two main components:
 
-3- after first step run the auto-complete file to see how program work.
+1. **text_auto_complete_model_trainer.py**: This script is responsible for training a model to autocomplete text using a Persian dataset.
+2. **text_auto_complete.py**: This script uses the trained model to suggest text completions and stores the results in an SQLite database.
 
-### offer: 
-Read the md files to get good information about the libraries used.
+## Libraries Used
+
+The following libraries are used in this project:
+
+- **[joblib](https://joblib.readthedocs.io/en/stable/)**: Used for saving and loading the model.
+- **[pickle](https://docs.python.org/3/library/pickle.html)**: Used for saving and loading the tokenizer.
+- **[numpy](https://numpy.org/devdocs/user/absolute_beginners.html)**: Used for numerical operations and data manipulation.
+- **[pandas](https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html)**: Used for handling the dataset and loading the data.
+- **[tensorflow](https://www.tensorflow.org/)**: Used for model building, training, and prediction.
+- **[sqlite3](https://docs.python.org/3/library/sqlite3.html)**: Used for creating and interacting with a local SQLite database to store autocomplete results.
+
+## Detailed Explanation
+
+### `text_auto_complete_model_trainer.py`
+
+This script is the core of the project, responsible for training the text autocomplete model. The key components of the script are:
+
+- **TrainModel Class**: This class handles the entire process from loading the dataset to training and saving the model. The main methods include:
+  - `preprocess_data()`: Cleans the text data by removing unwanted characters.
+  - `tokenize_text()`: Tokenizes the text data and saves the tokenizer for later use.
+  - `prepare_sequences()`: Prepares input sequences for training the model by creating n-gram sequences and padding them.
+  - `build_model()`: Constructs a Sequential model using Embedding, Bidirectional LSTM, and Dense layers.
+  - `train_model()`: Trains the model on the prepared sequences and saves it for later use.
+  - `run()`: Executes the entire training process in sequence.
+
+### `text_auto_complete.py`
+
+This script uses the trained model to autocomplete text inputs and stores the results in an SQLite database. The key components of the script are:
+
+- **TextAutoComplete Class**: This class handles the model loading, text autocompletion, and database interactions. The main methods include:
+  - `_load_tokenizer()`: Loads the tokenizer from the saved file.
+  - `_load_model()`: Loads the trained model from the saved file.
+  - `_create_table()`: Creates an SQLite table (if it doesn't already exist) to store the original text, added words, and the final completed text.
+  - `autocomplete_text()`: Predicts the next words in the text based on the model's output.
+  - `save_to_db()`: Saves the original text, added words, and final completed text to the SQLite database.
+  - `close_connection()`: Closes the connection to the SQLite database.
+  - `run()`: Handles the entire process of autocompleting the text and saving the result.
+
+### How It Works
+
+1. **Model Training**:
+    - The `text_auto_complete_model_trainer.py` script reads a CSV file containing Persian text data.
+    - The text is tokenized, and input sequences are generated for training.
+    - A model is trained using the tokenized data and saved for later use.
+
+2. **Text Auto-Completion**:
+    - The `text_auto_complete.py` script loads the trained model and tokenizer.
+    - The user inputs text, which is tokenized and passed through the model.
+    - The model predicts the next words, and the results are saved in the SQLite database.
+
+## Installation and Setup
+
+To use this project, follow these steps:
+
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/amiriiw/text-auto-complete.git
+    cd text-auto-complete
+    ```
+
+2. Install the required libraries:
+
+    ```bash
+    pip install joblib numpy pandas tensorflow
+    ```
+
+3. Prepare your dataset (a CSV file with a column 'Text' containing Persian text).
+
+4. Run the model training script:
+
+    ```bash
+    python text_auto_complete_model_trainer.py
+    ```
+
+5. Use the trained model for text auto-completion:
+
+    ```bash
+    python text_auto_complete.py
+    ```
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
