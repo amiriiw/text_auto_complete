@@ -71,7 +71,7 @@ To use this project, follow these steps:
 
     ```bash
     git clone https://github.com/amiriiw/text_auto_complete
-    cd text-auto-complete
+    cd text_auto_complete
     ```
 
 2. Install the required libraries:
